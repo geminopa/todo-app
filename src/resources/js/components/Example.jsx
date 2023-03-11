@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Button } from '@material-ui/core';
 
 function Example() {
     return (
@@ -10,6 +11,9 @@ function Example() {
                         <div className="card-header">React導入成功!</div>
 
                         <div className="card-body">I'm an example component!</div>
+
+                        <Button color="primary" variant="contained">Hello World</Button>
+                        <Button color="secondary" variant="contained">Hello World</Button>
                     </div>
                 </div>
             </div>
