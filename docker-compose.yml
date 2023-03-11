@@ -17,6 +17,8 @@ services:
         target: /root/.config/psysh
         volume:
           nocopy: true
+    ports: 
+      - "5173:5173"
     environment:
       - APP_DEBUG=${APP_DEBUG:-true}
       - APP_ENV=${APP_ENV:-local}
