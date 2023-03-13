@@ -1,24 +1,33 @@
 import React from "react";
-import { ReactDOM } from "react-dom";
+import { createRoot } from "react-dom/client";
 import {
     BrowserRouter,
     Route,
-    Switch,
+    Routes,
 } from 'react-router-dom';
 import Example from "./pages/Example";
 
 function App() {
     return (
         <div>
-            <Switch>
+            <Routes>
                 <Route path='/example' exact Component={Example} />
-            </Switch>
+            </Routes>
         </div>
     )
 }
 
-ReactDOM.render((
+const Index = createRoot(document.getElementById("app"));
+
+Index.render(
     <BrowserRouter>
-        <App />
+        <App/>
     </BrowserRouter>
-), document.getElementById('app'))
+)
+
+
+// ReactDOM.render((
+//     <BrowserRouter>
+//         <App />
+//     </BrowserRouter>
+// ), document.getElementById('app'));
