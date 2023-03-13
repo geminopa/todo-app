@@ -6,12 +6,14 @@ import {
     Routes,
 } from 'react-router-dom';
 import Example from "./pages/Example";
+import Home from "./pages/Home";
 
 function App() {
     return (
         <div>
             <Routes>
                 <Route path='/example' exact Component={Example} />
+                <Route path='/' exact Component={Home} />
             </Routes>
         </div>
     )
@@ -24,10 +26,3 @@ Index.render(
         <App/>
     </BrowserRouter>
 )
-
-
-// ReactDOM.render((
-//     <BrowserRouter>
-//         <App />
-//     </BrowserRouter>
-// ), document.getElementById('app'));
