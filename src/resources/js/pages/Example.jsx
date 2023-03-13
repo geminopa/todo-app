@@ -13,7 +13,7 @@ function Example() {
                         <div className="card-body">pages配下に置きました</div>
 
                         <Button color="primary" variant="contained">Hello World</Button>
-                        <Button color="secondary" variant="contained">Hello World</Button>
+                        <Button color="secondary" variant="contained">Homeに遷移ボタン</Button>
                     </div>
                 </div>
             </div>
@@ -23,12 +23,12 @@ function Example() {
 
 export default Example;
 
-if (document.getElementById('app')) {
-    const Index = ReactDOM.createRoot(document.getElementById("app"));
+// if (document.getElementById('app')) {
+//     const Index = ReactDOM.createRoot(document.getElementById("app"));
 
-    Index.render(
-        <React.StrictMode>
-            <Example/>
-        </React.StrictMode>
-    )
-}
+//     Index.render(
+//         <React.StrictMode>
+//             <Example/>
+//         </React.StrictMode>
+//     )
+// }
